@@ -16,6 +16,7 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
+import com.google.gwt.user.client.ui.HorizontalPanel;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -46,8 +47,20 @@ public class petstore implements EntryPoint {
     // We can add style names to widgets
     sendButton.addStyleName("sendButton");
 
-    VerticalPanel verticalPanel = new VerticalPanel();
-    RootPanel.add(verticalPanel)
+    HorizontalPanel horizontalPanel1 = new HorizontalPanel();
+    horizontalPanel1.add(nameField);
+    horizontalPanel1.add(sendButton);
+
+    VerticalPanel verticalPanel1 = new VerticalPanel();
+    VerticalPanel verticalPanel2 = new VerticalPanel();
+    VerticalPanel verticalPanel3 = new VerticalPanel();
+    
+    
+    
+    verticalPanel2.add(horizontalPanel1);
+    RootPanel.get().add(verticalPanel1);
+    RootPanel.get().add(verticalPanel2);
+    RootPanel.get().add(verticalPanel3);
     // Add the nameField and sendButton to the RootPanel
     // Use RootPanel.get() to get the entire body element
     RootPanel.get("nameFieldContainer").add(nameField);

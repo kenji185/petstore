@@ -1,0 +1,2 @@
+serviceClass: pl.pcz.client.GreetingService
+path: 9A7E6DC912DDD499EC2860416637E333.gwt.rpc

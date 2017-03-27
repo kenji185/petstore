@@ -1,0 +1,3 @@
+# Module petstore
+# RPC service class, partial path of RPC policy file
+pl.pcz.client.GreetingService, 9A7E6DC912DDD499EC2860416637E333.gwt.rpc
